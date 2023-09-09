@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 current_day = datetime.now().strftime('%A')
-utc_time = datetime.utcnow().isoformat() + 'Z'
+utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
 
 
 data = {
@@ -11,7 +11,8 @@ data = {
         "current_day": current_day,
         "utc_time": utc_time,
         "track": "backend",
-        "github_file_url": "https://github.com/ru0ya/Hng_Backend/blob/main/user_data.py",
-        "github_repo_url": "https://github.com/ru0ya/Hng_Backend/tree/main",
+        "github_file_url":
+        "https://github.com/ru0ya/Hng_Backend/blob/main/stage_one/main.py",
+        "github_repo_url": "https://github.com/ru0ya/Hng_Backend/tree/main/stage_one",
         "status_code": 200
         }
