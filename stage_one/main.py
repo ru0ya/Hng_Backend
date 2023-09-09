@@ -3,7 +3,9 @@
 Flask app that takes two GET request parameters
 """
 from flask import Flask, request, jsonify
-from datetime import datetime
+
+
+from user_data import data
 
 
 app = Flask(__name__)
@@ -27,8 +29,6 @@ def get_details():
 
     if not slack_name or not track:
         return jsonify({'error': 'Two arguments are required'}), 400
-
-
 
     if slack_name == data['slack_name'] and track == data['track']:
         return jsonify(data), 200
