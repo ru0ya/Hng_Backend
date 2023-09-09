@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 current_day = datetime.now().strftime('%A')
-utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-4] + 'Z'
+utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
 
 data = {
