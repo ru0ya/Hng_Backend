@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from datetime import datetime, timezone
+from datetime import datetime
 
 
 current_day = datetime.now().strftime('%A')
