@@ -2,8 +2,8 @@
 from datetime import datetime
 
 
-current_day = datetime.now().strftime('%A')
-utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+current_day = datetime.now().strftime("%A")
+utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 data = {
