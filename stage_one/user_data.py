@@ -7,7 +7,7 @@ utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 data = {
-        "slack_name": "Victor Mwangi",
+        "slack_name": "Victor Ruoya",
         "current_day": current_day,
         "utc_time": utc_time,
         "track": "backend",
